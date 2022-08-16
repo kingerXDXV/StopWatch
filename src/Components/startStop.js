@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../style/style.css"
 const StartStop= function(){
     const [start,setStart] = useState("Start");
     const clickHandler = ()=>{
@@ -9,7 +10,7 @@ const StartStop= function(){
     }
     return(
         <div>
-            <button onClick={clickHandler}>{start}</button>
+            <button onClick={clickHandler} className="btn1">{start}</button>
         </div>
     )
 }
