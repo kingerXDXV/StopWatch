@@ -18,11 +18,10 @@ const StartStop= function(){
     }
 
     const resetHandler = ()=>{
-        setFlag(false);
-        clickHandler();
         setS(0);
         setM(0);
         setH(0);
+        setFlag(false);
     }
 
     useEffect(()=>{
@@ -41,11 +40,16 @@ const StartStop= function(){
         }
     })
     return(
-        <div>
-            
+        <div className="div0">
+            <div className="div1">
             <button onClick={clickHandler} className="btn1">{start}</button>
-            <button onClick={resetHandler}>Reset</button>
-            <label>hello {h}:{m}:{s}</label>
+            <button onClick={resetHandler} className="btn2">Reset</button>
+            </div>
+            <div className="div2">
+                <label className="l1">{h}</label>
+                <label className="l2">:{m}</label>
+                <label className="l3">:{s}</label>
+            </div>
         </div>
     )
 }
