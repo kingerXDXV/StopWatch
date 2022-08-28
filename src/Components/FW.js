@@ -2,7 +2,7 @@ import { Fireworks } from 'fireworks/lib/react'
 
 export default function firework() {
   let fxProps = {
-    count: 4,
+    count: 3,
     interval: 1000,
     bubbleSizeMaximum: 10,
     colors: ['#FFFF00', '#0000FF', '#00FF00', '#FF0000'],
